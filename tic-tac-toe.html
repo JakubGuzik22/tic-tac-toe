@@ -1,16 +1,37 @@
 <html>
 <head>
-	<title>The Tic-tac-toe in JS</title>
+	<title>The Tic-tac-toe in JavaScript</title>
 	<link rel="stylesheet" href="style.css"/>
 	<script src="ttt.js">
 	</script>
 </head>
 <body>
 	<section id="top">
-		<b>The good old-fashioned Tic-tac-toe game!</b><br>
-		For now, the only mode available is against other player.<br>
-		<img src="circle.png" id="circle"/>
-		<img src="cross.png" id="cross"/>
+	<br><br><br>
+		<b>The good old-fashioned, simple Tic-tac-toe game!</b><br>
+		For now, the only mode is against other player.<br>
+	<br><br><br>
+	</section>
+	
+	<section id="right">
+	<img src="cross.png" id="cross"/>
+	<img src="circle.png" id="circle"/>
+	<br>Here are the rules:<br>
+
+		1.The Crosses always start<br>
+		2.The winning condition is to get<br>
+		three same symbols in line<br>
+		3.Because author values real-life expiriences, the programme will NOT<br>
+		tell You when someone wins by itself. You got to decide it by Yourself.<br>
+		4.When you click RESET button, the website refreshes.<br>
+		5.(OPTIONAL) After getting three same symbols in line, press the other button.<br>
+		
+	<br><br><br>
+	<section id="lowerright">
+		<input type="button" id="end" onClick="gotsomethinginline()" value="Here! I got the line!"/>
+		<br><br>
+		<input type="button" id="button" onClick="window.location.reload()" value="RESET"/>
+	</section>
 	</section>
 	
 	<section id="main">
@@ -34,7 +55,6 @@
 	</section>
 	
 	<section id="bottom">
-	<button type="button" id="button" onclick="window.location.reload()">RESET</button>
 	</section>
 </body>
 </html>

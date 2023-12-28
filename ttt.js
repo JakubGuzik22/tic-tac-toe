@@ -1,5 +1,3 @@
-/*var circle = document.getElementById("circle");
-var cross = document.getElementById("cross");*/
 var turn=0;
 var wincondition;
 var clicked1 = false;
@@ -11,6 +9,21 @@ var clicked6 = false;
 var clicked7 = false;
 var clicked8 = false;
 var clicked9 = false;
+
+function gotsomethinginline()
+{
+if (turn>=5)
+{
+	alert("If you are right...");
+	if (turn%2==0)
+		alert("than the Circles wins!");
+	else
+		alert("than the Crosses wins!");
+}
+else
+	alert("No way! You're trolling! Keep on playing.");
+}
+
 
 function game(x)
 {
