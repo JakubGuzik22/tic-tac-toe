@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>The Tic-tac-toe in JavaScript</title>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="ttt.js">
+	</script>
+</head>
+<body>
+	<section id="top">
+	<br><br><br>
+		<b>The good old-fashioned, simple Tic-tac-toe game!</b><br>
+		For now, the only mode is against other player.<br>
+	<br><br><br>
+	</section>
+	
+	<section id="right">
+	<p style="text-align:center;">
+		<br><br>
+		<b>Here are the rules:</b>
+	</p>
+		<ol>
+		<li>The winning condition is to get three same symbols in line</li>
+		<li>The programme will tell You when someone wins by itself.</li>
+		<li>When you click RESET button, the website refreshes. (use in case of a tie, or if the game is done and you want to play again)</li>
+		</ol>
+	<br><br><br>
+	<section id="lowerright">
+		<input type="button" id="button" onClick="window.location.reload()" value="RESET"/>
+	</section>
+	</section>
+	
+	<section id="main">
+	<table id="table1">
+		<tr>
+			<td id="one" onClick="game(1)"></td>
+			<td id="two" onClick="game(2)"></td>
+			<td id="three" onClick="game(3)"></td>
+		</tr>
+		<tr>
+			<td id="four" onClick="game(4)"></td>
+			<td id="five" onClick="game(5)"></td>
+			<td id="six" onClick="game(6)"></td>
+		</tr>
+		<tr>
+			<td id="seven" onClick="game(7)"></td>
+			<td id="eight" onClick="game(8)"></td>
+			<td id="nine" onClick="game(9)"></td>
+		</tr>
+	</table>
+	</section>
+	
+	<section id="bottom">
+	<p style="text-align:right;">JAKUB GUZIK, INFORMATYKA PRZEMYSŁOWA, ROK 1 SEMESTR 1, GRUPA 3</p>
+	</section>
+</body>
+</html>
